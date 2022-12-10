@@ -20,11 +20,11 @@ templates = Jinja2Templates(directory="templates")
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
     """
-    Function to render base.html at route '/' as a get request
-    Args:
-        request (Request): request in path operation that will return a template
-    Returns:
-        TemplateResponse: render base.html
+    Function to render `base.html` at route '/' as a get request
+    __Args__:
+    - __request (Request)__: request in path operation that will return a template
+    __Returns__:
+    - __TemplateResponse__: render `base.html`
     """
     return templates.TemplateResponse("base.html", {"request": request})
 
@@ -35,13 +35,12 @@ async def predict(
     message: str = Form(...),
 ):
     """
-    Function to predict spam status
-    and shows the result by rendering base.html at route '/predict'
-    Args:
-        request (Request): request in path operation that will return a template
-        message (str): message text
+    Function to predict spam status and shows the result by rendering `base.html` at route '/predict'
+    __Args__:
+    - __request (Request)__: request in path operation that will return a template
+    - __message (str)__: message text
     Returns:
-        Template: render base.html
+    - __Template Response__: render `base.html`
     """
     data = [message]  # str -> [str]
     vect = transform.transform(
