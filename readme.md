@@ -3,9 +3,8 @@
 ![html5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![css3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![pandas](https://img.shields.io/badge/Pandas-2C2D72?logo=pandas&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit_learn-0078D4?logo=scikit-learn&logoColor=white)
-![fastapi](https://img.shields.io/badge/fastapi-109989?logo=FASTAPI&logoColor=white)
-![heroku](https://img.shields.io/badge/Heroku-430098?logo=heroku&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/Scikit_learn-0078D4?logo=scikit-learn&logoColor=white)
+![fastapi](https://img.shields.io/badge/Fastapi-109989?logo=FASTAPI&logoColor=white)
 ![vscode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?logo=visual%20studio%20code&logoColor=white)
 
 SMS Spam Classifier app is used to predict if the given input message is spam or not. The app created using python's scikit-learn, fastapi, pandas, nltk and joblib packages.
@@ -13,7 +12,7 @@ SMS Spam Classifier app is used to predict if the given input message is spam or
 ## Installation
 Open Anaconda prompt and create new environment
 ```
-conda create -n your_env_name python=3.10.4
+conda create -n your_env_name python=(any version < 3.10.4)
 ```
 Then Activate the newly created environment
 ```
@@ -39,8 +38,8 @@ uvicorn main:app --reload
 ### Spam Result
 ![spam_image](markdown/spam.png)
 ### Not Spam Result
-![not_spam_image](markdown/noSpam.png)
+![not_spam_image](markdown/ham.png)
 ### Swagger UI
-![swagger_image](markdown/swagger.png)
+![swagger_image](markdown/docs.png)
 ### Redoc UI
 ![redoc_image](markdown/redoc.png)
